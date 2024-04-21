@@ -16,7 +16,7 @@ public class LionTest {
 
     @Mock
     Feline feline;
-    private String actualExceptionText;
+
 
     @Test
     public void getKittens() throws Exception {
@@ -28,6 +28,7 @@ public class LionTest {
 
     @Test
     public void exceptionSexTest() {
+        String actualExceptionText = null;
         try {
             new Lion(TestValues.EXCEPTION_SEX, feline);
         }catch(Exception exception){
